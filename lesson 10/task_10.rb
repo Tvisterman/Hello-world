@@ -3,6 +3,7 @@ def perform(action, arr = [])
 
   result =
     if block_given?
+      yield(action, arr)
     else
       'Пожалуйста, дайте мне инструкции'
     end
